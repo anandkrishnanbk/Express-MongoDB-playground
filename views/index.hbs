@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <meta charset="UTF-8">
+    <title>User Names</title>
+<style>
+    *{
+        font-family:Helvetica, Arial, sans-serif;
+    }
+    div{
+        display:flex;
+        align-items:center;
+        padding:1em;
+        font-size: 1.2em;
+       }
+    div a{
+        padding-left: .5em;
+    }
+</style>
+</head>
+<body>
+<ul>
+    {{#each users as |user|}}
+    <div>
+        <img src="/profilepics/{{user.username}}_sm.jpg" alt="">
+        <a href="/{{user.username}}">{{user.name.full}}</a></div>
+    </div>
+    {{/each}}
+</ul>
+</body>
+</html>

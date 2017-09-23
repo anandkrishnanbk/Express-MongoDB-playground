@@ -17,13 +17,9 @@
 </style>
 </head>
 <body>
-<ul>
-    {{#each users as |user|}}
+    <h1>{{username}}</h1>
     <div>
-        <img src="/profilepics/{{user.username}}_sm.jpg" alt="">
-        <a href="/{{user.username}}">{{user.name.full}}</a></div>
+        <img src="/profilepics/{{username}}_lg.jpg" alt="">
     </div>
-    {{/each}}
-</ul>
 </body>
 </html>
